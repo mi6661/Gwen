@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>固定背景和可滚动内容</title>
+<style>
+  body {
+    background-image: url('your-image.jpg'); /* 替换为你的图片路径 */
+    background-size: cover; /* 让背景图片覆盖整个 body */
+    background-position: center; /* 让背景图片居中显示 */
+    background-attachment: fixed; /* 使背景图片固定不随滚动 */
+    margin: 0; /* 移除 body 默认的 margin */
+    padding: 0; /* 移除 body 默认的 padding */
+    height: 100vh; /* 让 body 占据整个视口高度，确保背景可见 */
+    overflow: hidden; /* 隐藏 body 的滚动条，因为我们要在 div 内滚动 */
+  }
+
+  .scrollable-content {
+    width: 100%;
+    max-height: 80vh; /* 设置 div 的最大高度，可以根据需要调整 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    background-color: rgba(255, 255, 255, 0.8); /* 可选：设置一个半透明的背景 */
+    padding: 20px; /* 可选：添加内边距 */
+    box-sizing: border-box; /* 确保 padding 不会增加 div 的实际尺寸 */
+  }
+
+  /* 如果内容超出 .scrollable-content 的高度，就会出现滚动条 */
+  .scrollable-content p {
+    margin-bottom: 15px; /* 可选：段落之间的间距 */
+  }
+</style>
+</head>
+<body>
+
+  <div class="scrollable-content">
+    <h1>欢迎来到我的网站</h1>
+    <p>这是第一段内容，你可以添加更多的文本、图片等等。</p>
+    <p>这是第二段内容，为了演示滚动效果，我们需要足够多的内容来超出 div 的高度。</p>
+    <p>这是第三段内容...</p>
+    <p>这是第四段内容...</p>
+    <p>这是第五段内容...</p>
+    <p>这是第六段内容...</p>
+    <p>这是第七段内容...</p>
+    <p>这是第八段内容...</p>
+    <p>这是第九段内容...</p>
+    <p>这是第十段内容，现在内容应该足够多了，你可以尝试滚动这个 div 盒子。</p>
+    </div>
+
+</body>
+</html>
