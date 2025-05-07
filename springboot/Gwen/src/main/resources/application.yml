@@ -1,5 +1,9 @@
 spring:
   application:
     name: Gwen
+  datasource:
+    url: 101.126.129.202
+    password: Asd620510.
+    username: root
 server:
-  port: 8089
+  port: 8088
