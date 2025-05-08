@@ -1,9 +1,13 @@
 package com.gulu.gwen.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
 import java.sql.Date;
 
-
+@Entity
 public class BlogPosts {
+    @Id
     private int id;
     private String title;
     private String content;
@@ -16,6 +20,10 @@ public class BlogPosts {
         this.content = content;
         this.createdAt = createdAt;
         this.updatedAt = updatedAt;
+    }
+
+    public BlogPosts() {
+
     }
 
     @Override
