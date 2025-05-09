@@ -1,5 +1,11 @@
 spring:
   application:
     name: Gwen
+  datasource:
+    url: jdbc:mysql://101.126.129.202:3306/Gwen
+    username: root
+    password: Asd620510.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
 server:
-  port: 8089
+  port: 8088
