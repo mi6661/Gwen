@@ -17,4 +17,9 @@ public class BlogPostsController {
     public List<BlogPosts> test() {
         return blogPostsService.getAll();
     }
+    @GetMapping("/Id")
+    public BlogPosts getById() {
+        int id = 1;
+        return blogPostsService.getById(id);
+    }
 }

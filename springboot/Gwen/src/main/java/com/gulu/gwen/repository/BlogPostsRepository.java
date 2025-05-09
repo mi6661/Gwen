@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface BlogPostsRepository extends JpaRepository<BlogPosts,Long> {
 
+    BlogPosts getBlogPostsById(int id);
 }
