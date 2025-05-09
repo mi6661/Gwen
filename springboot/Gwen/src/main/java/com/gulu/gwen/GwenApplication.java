@@ -10,5 +10,4 @@ public class GwenApplication {
         System.out.println("hello world");
         SpringApplication.run(GwenApplication.class, args);
     }
-
 }
