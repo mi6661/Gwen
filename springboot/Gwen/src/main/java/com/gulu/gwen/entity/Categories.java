@@ -2,8 +2,9 @@ package com.gulu.gwen.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Data;
 
-@Entity
+@Data
 public class Categories {
     @Id
     private int id;
@@ -24,21 +25,5 @@ public class Categories {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 '}';
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 }

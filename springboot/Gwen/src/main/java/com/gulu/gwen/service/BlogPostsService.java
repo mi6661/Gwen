@@ -6,8 +6,10 @@ import org.springframework.stereotype.Service;
 
 import com.gulu.gwen.entity.BlogPosts;
 
-@Service
+
 public interface BlogPostsService{
-    public List<BlogPosts> getAll();
-    public BlogPosts getById(int id);
+
+    List<BlogPosts> getAll();
+
+    BlogPosts getById(int id);
 }

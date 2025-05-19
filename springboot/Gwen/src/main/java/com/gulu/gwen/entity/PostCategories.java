@@ -2,8 +2,9 @@ package com.gulu.gwen.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Data;
 
-@Entity
+@Data
 public class PostCategories {
     @Id
     private int post_id;
@@ -20,21 +21,5 @@ public class PostCategories {
                 "post_id=" + post_id +
                 ", category_id=" + category_id +
                 '}';
-    }
-
-    public int getPost_id() {
-        return post_id;
-    }
-
-    public void setPost_id(int post_id) {
-        this.post_id = post_id;
-    }
-
-    public int getCategory_id() {
-        return category_id;
-    }
-
-    public void setCategory_id(int category_id) {
-        this.category_id = category_id;
     }
 }
